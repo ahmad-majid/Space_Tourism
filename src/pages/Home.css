@@ -1,0 +1,188 @@
+.home {
+  height: 100vh;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: scroll;
+  display: flex;
+}
+
+.home article {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .text-box {
+  width: 33.472vw;
+  margin: 150px 0 0 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .intro {
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-size: 1.944vw;
+  letter-spacing: 5px;
+  color: #d0d6f9;
+}
+
+.home h1 {
+  font-size: 10.417vw;
+  font-family: "Bellefair";
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.home .text {
+  font-family: "Barlow Condensed";
+  font-size: clamp(16px, 1.25vw, 1.25vw);
+  letter-spacing: clamp(2px, 0.146vw, 0.146vw);
+  line-height: 27px;
+  color: #d0d6f9;
+}
+
+.home .explore-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 225px 0 0 0;
+}
+
+.home .explore-hover {
+  background-color: rgba(255, 255, 255, 0.459);
+  height: clamp(242px, 19.028vw, 19.028vw);
+  width: clamp(242px, 19.028vw, 19.028vw);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  backdrop-filter: blur(5px);
+}
+
+.home .explore-hover:hover {
+  height: clamp(344px, 26.111vw, 26.111vw);
+  width: clamp(344px, 26.111vw, 26.111vw);
+}
+
+.home .explore {
+  background-color: #ffff;
+  height: clamp(242px, 19.028vw, 19.028vw);
+  width: clamp(242px, 19.028vw, 19.028vw);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  font-size: 2.222vw;
+  color: #0b0d17;
+  text-decoration: none;
+  font-family: "Bellefair";
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .home article {
+    width: 100%;
+  }
+
+  .home .text-box {
+    margin: 200px 0 0 0;
+    text-align: center;
+    width: 482px;
+  }
+
+  .home .intro {
+    font-size: 20px;
+  }
+
+  .home h1 {
+    font-size: 150px;
+  }
+
+  .home .text {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .home .explore-container {
+    min-height: 400px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .home .explore-hover {
+    height: 242px;
+    width: 242px;
+  }
+
+  .home .explore-hover:hover {
+    height: 344px;
+    width: 344px;
+  }
+
+  .home .explore {
+    height: 242px;
+    width: 242px;
+    font-size: clamp(20px, 2.222vw, 2.222vw);
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    gap: 0;
+  }
+
+  .home .text-box {
+    margin: 120px 0 0 0;
+  }
+
+  .home .intro {
+    font-size: 16px;
+  }
+
+  .home h1 {
+    font-size: 80px;
+    margin-top: 15px;
+  }
+
+  .home .text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 20px 30px 0 30px;
+  }
+
+  .home .explore-container {
+    min-height: 250px;
+  }
+
+  .home .explore-hover {
+    height: 150px;
+    width: 150px;
+  }
+
+  .home .explore-hover:hover {
+    height: 150px;
+    width: 150px;
+  }
+
+  .home .explore {
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
+  }
+}

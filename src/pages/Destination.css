@@ -1,0 +1,185 @@
+.destination {
+    height: 100vh;
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffff;
+    overflow: scroll;
+  }
+  
+  .destination .key-div {
+    height: 100%;
+    display: flex;
+  }
+  
+  .destination .planet-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0 0 200px;
+  }
+  
+  .destination img {
+    height: clamp(300px, 27.778vw, 27.778vw);
+  }
+  
+  .destination .data-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 135px 0 135px;
+  }
+  
+  .destination nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .destination button {
+    height: 20px;
+    width: 40px;
+    border-radius: 1px;
+    border: none;
+    border-bottom: 3px solid #0b0d17;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .destination button:hover {
+    border-bottom: 3px solid #85868b;
+  }
+  
+  .destination .active {
+    border-bottom: 3px solid #ffff;
+    cursor: default;
+  }
+  .destination .active:hover {
+    border-bottom: 3px solid #ffff;
+  }
+  
+  .destination h2 {
+    font-size: 6.944vw;
+    font-family: "Bellefair";
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .destination p {
+    height: auto;
+    font-family: "Barlow Condensed";
+    color: #d0d6f9;
+    font-size: clamp(16px, 1.25vw, 1.25vw);
+    line-height: 29px;
+    letter-spacing: 0.115vw;
+  }
+  
+  .destination hr {
+    border: 0;
+    width: 100%;
+    background-color: rgba(110, 109, 109, 0.341);
+    height: 1px;
+    margin: 50px 0;
+  }
+  
+  .destination .distance-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    font-family: "Bellefair";
+    font-size: 1.944vw;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 1024px) {
+    .destination {
+      background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+  
+    .destination .key-div {
+      flex-direction: column;
+    }
+  
+    .destination .planet-container {
+      height: 512px;
+      width: 100%;
+      padding: 0;
+      align-items: end;
+    }
+  
+    .destination img {
+      height: clamp(150px, 29.297vw, 29.297vw);
+    }
+  
+    .destination .data-container {
+      height: 512px;
+      width: 100%;
+      text-align: center;
+      padding: 0 85px;
+    }
+  
+    .destination nav {
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .destination button {
+      width: 50px;
+    }
+  
+    .destination h2 {
+      font-size: 80px;
+    }
+  
+    .destination p {
+      height: auto;
+      font-size: 16px;
+    }
+  
+    .destination .distance-container {
+      justify-content: center;
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .destination {
+      background-image: url("../assets/destination/background-destination-mobile.jpg");
+    }
+  
+    .destination img {
+      height: 150px;
+      margin: 130px 0 50px 0;
+    }
+  
+    .destination .data-container {
+      padding: 0 40px;
+    }
+  
+    .destination nav {
+      gap: 15px;
+    }
+  
+    .destination h2 {
+      font-size: 56px;
+    }
+  
+    .destination p {
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+  
+    .destination .distance-container {
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+  }
+  
